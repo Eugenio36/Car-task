@@ -1,7 +1,5 @@
 package com.stoneshomework.car.domain;
 
-import com.fasterxml.jackson.annotation.JsonAlias;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
