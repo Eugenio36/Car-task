@@ -31,11 +31,17 @@ number. You can organize field structure as it suits your needs.
  
 ![CAR](https://user-images.githubusercontent.com/94042617/171402530-20f10add-5c94-40c2-8ed2-b5109cfa12ee.jpg)
 
-7. To check whether the program is working correctly or not you can use POSTMAN.
+7. To check, for example, how many BMW cars there in the table as well as full information regarding specific car, use link  -> http://localhost:8080/car/search/BMW
 
-8. To check, for example, how many BMW cars there in the table use link as well as full information regarding specific car -> http://localhost:8080/car/search/BMW
+8. To export all cars in JSON file use link  -> http://localhost:8080/car/export (right click on that page -> Save as JSON file)
 
-9. To export all cars in JSON file use link (better to open this link in browser) -> http://localhost:8080/car/export
+9. Now you can import that file into database. For this task better to use Postman.
 
+![import](https://user-images.githubusercontent.com/94042617/171404756-86f4a514-51fd-4b5a-a031-e3ecbb162d5c.jpg)
 
+ - Use Post request and link http://localhost:8080/car/import
+ - Go to `Body` -> `form-data` as shown in picture above and attach this file and click Send. Now all data have been imported. If you changed something in file it will update existing data or add new data if it does not exist.
 
+10. To use Swagger UI kindly use this link -> http://localhost:8080/swagger-ui/index.html#/
+
+11. Unit and Integration tests are located in `test` folder.
